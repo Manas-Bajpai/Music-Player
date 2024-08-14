@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify:Web Player</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="utility stylesheet" href="utility.css" />
+  </head>
+  <body>
+    <div class="container flex bg-black">
+      <div class="left">
+        <div class="home bg-gray rounded m-1 p-1">
+          <img class="m-b invert" src="./img/logo.svg" alt="logo" />
+          <ul>
+            <li class="flex m-b f">
+              <img class="invert" src="./img/home.svg" alt="home" />Home
+            </li>
+            <li class="flex m-b f">
+              <img class="invert" src="./img/search.svg" alt="search" />Search
+            </li>
+          </ul>
+        </div>
+        <div class="library border bg-gray rounded m-1 f p-sm">
+          <div class="heading flex items-centre f-d">
+            <img class="invert" src="./img/playlist.svg" alt="" />
+            <h2 class="f">Your Library</h2>
+          </div>
+          <div class="songsList">
+            <ul></ul>
+          </div>
+
+          <div class="footer flex f-small">
+            <div>
+              <a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/privacy/"
+                ><span>Privacy Center</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/legal/privacy-policy/"
+                ><span>Privacy Policy</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/legal/cookies-policy/"
+                ><span>Cookies</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"
+                ><span>About Ads</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right border bg-gray m-1">
+        <div class="header flex bg-gray rounded">
+            <div class="hamburger-container">
+              <img class="hamburger invert" src="./img/hamburger.svg" alt="" />
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 1024 1024"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M724 218.3V141c0-6.7-7.7-10.4-12.9-6.3L260.3 486.8a31.86 31.86 0 0 0 0 50.3l450.8 352.1c5.3 4.1 12.9.4 12.9-6.3v-77.3c0-4.9-2.3-9.6-6.1-12.6l-360-281 360-281.1c3.8-3 6.1-7.7 6.1-12.6z"
+                ></path>
+              </svg>
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                stroke-width="0"
+                viewBox="0 0 1024 1024"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M765.7 486.8L314.9 134.7A7.97 7.97 0 0 0 302 141v77.3c0 4.9 2.3 9.6 6.1 12.6l360 281.1-360 281.1c-3.9 3-6.1 7.7-6.1 12.6V883c0 6.7 7.7 10.4 12.9 6.3l450.8-352.1a31.96 31.96 0 0 0 0-50.4z"
+                ></path>
+              </svg>
+            </div>
+            <div class="buttons m-1">
+              <button class="LSbtn f bg-gray" id="signup">Sign Up</button>
+              <button class="LSbtn f">Log In</button>
+            </div>
+          
+        </div>
+        <h2 class="m-l f-large">Popular Artist</h2>
+        <div class="artist flex justify-space">
+          <div class="photo">
+            <img class="round-img" src="./img/arijit.jpeg" alt="" />
+          </div>
+          <div class="photo">
+            <img class="round-img" src="./img/ar rahman.jpg" alt="" />
+          </div>
+          <div class="photo">
+            <img class="round-img" src="./img/atif.jpg" alt="" />
+          </div>
+          <div class="photo">
+            <img class="round-img" src="./img/Pritam-1-scaled.jpg" alt="" />
+          </div>
+          <div class="photo">
+            <img class="round-img" src="./img/vishal.jpg" alt="" />
+          </div>
+        </div>
+        <h2 class="m-l f-large m-t">Spotify Playlist</h2>
+        <div class="spotify-playlist">
+          <div class="card-container flex">
+            <div class="card">
+              <img class="rounded" src="./img/happy.jpg" alt="" />
+              <h2>Happy Hits</h2>
+              <p class="f-small">
+                Hits To Boost off your mood and fill you with happpiness
+              </p>
+            </div>
+            <div class="card">
+              <img class="rounded" src="./img/diljeet.jpg" alt="" />
+              <h2>Diljit</h2>
+              <p class="f-small">Hits of Diljit Dosanjh</p>
+            </div>
+            <div class="card">
+              <img class="rounded" src="./img/karan aujla.jpg" alt="" />
+              <h2>Karan Aujla</h2>
+              <p class="f-small">Hits of Karan Aujla</p>
+            </div>
+          </div>
+          <div class="playbar m-l">
+            <div class="seekbar">
+              <div class="circle"></div>
+            </div>
+            <div class="abovebar flex">
+              <div class="songinfo"></div>
+              <div class="song-button">
+                <img id="previous" src="./img/prevsong.svg" alt="" />
+                <img id="play" src="./img/play.svg" alt="" />
+                <img id="next" src="./img/nextsong.svg" alt="" />
+              </div>
+              <div class="songtime"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="./scirpt.js"></script>
+    </div>
+  </body>
+</html>

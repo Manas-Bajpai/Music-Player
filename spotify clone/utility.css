@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.border {
+  /* border: 2px solid red; */
+  margin: 3px;
+}
+
+.flex {
+  display: flex;
+}
+
+/* class for providing flex direcion */
+.f-d {
+  flex-direction: row;
+}
+.f-d2{
+    align-content: space-between;
+}
+.justify-centre {
+  justify-content: center;
+}
+
+.items-centre {
+  align-items: center;
+}
+
+.bg-black {
+  background-color: black;
+  color: white;
+}
+
+.bg-gray {
+  background-color: #121212;
+}
+
+.rounded {
+  border-radius: 10px;
+}
+
+.invert {
+  filter: invert(1);
+}
+
+/* bottm margin */
+.m-b {
+  margin-bottom: 1.5vw;
+}
+
+.m-1 {
+  margin: 0.5vw;
+}
+
+.m-l {
+  margin-left: 1vw;
+}
+
+.m-t{
+  margin-top: 1vw;
+}
+
+.m-r{
+  margin-right: 0.5vw;
+}
+
+/* for font */
+.f {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.f-small{
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+.f-mid{
+    font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.f-large{
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+}
+/* text center */
+.tc {
+  text-align: center;
+}
+
+.p-1 {
+  padding: 1.5vw;
+}
+
+.p-sm{
+  padding: 0.5vw;
+}
+
+.LSbtn{
+  border-radius: 2vw;
+  height: 6vh;
+  width: 7vw;
+  cursor: pointer;
+}
+
+.justify-space{
+  justify-content: space-around;
+}
